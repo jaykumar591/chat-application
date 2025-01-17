@@ -1,6 +1,13 @@
 import { MessageSquare } from "lucide-react";
+import {useNavigate} from 'react-router-dom'
+
 
 const NoChatSelected = () => {
+  const navigate = useNavigate()
+  const chatStart = ()=>{
+    
+    navigate('/chat')
+  }
   return (
     <div className="w-full flex flex-1 flex-col items-center justify-center p-16 bg-base-100/50">
       <div className="max-w-md text-center space-y-6">
@@ -21,6 +28,9 @@ const NoChatSelected = () => {
         <p className="text-base-content/60">
           Select a conversation from the sidebar to start chatting
         </p>
+        <div>
+          <button onClick={chatStart} className="w-20 h-10 shadow-2xl shadow-purple-800 animate-bounce rounded-full bg-primary">Chatbot</button>
+        </div>
       </div>
     </div>
   );

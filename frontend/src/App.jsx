@@ -5,6 +5,7 @@ import SignUpPage from './pages/SignUpPage'
 import LoginPage from './pages/LoginPage'
 import SettingPage from "./pages/SettingPage"
 import ProfilePage from './pages/ProfilePage'
+import ChatPage from './pages/ChatPage'
 import {useAuthStore} from './store/useAuthStore'
 import { useEffect } from "react"
 import {Loader} from 'lucide-react'
@@ -42,6 +43,7 @@ function App() {
         <Route path="/login" element={!authUser?<LoginPage/>:<Navigate to={'/'}/>} />
         <Route path="/settings" element={<SettingPage/>} />
         <Route path="/profile" element={authUser?<ProfilePage/>:<Navigate to={'/login'}/>} />
+        <Route path="/chat" element={authUser?<ChatPage/>:<Navigate to={'/login'}/>}/>
       </Routes>
       <Toaster/>
     </div>

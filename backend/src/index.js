@@ -5,6 +5,7 @@ import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import authRouter from './routes/auth.routes.js';
 import messageRouter from './routes/message.routes.js'
+import chat from './routes/chat.routes.js'
 import bodyParser from 'body-parser'
 import { app,server } from './lib/socket.js';
 import path from 'path'
@@ -30,6 +31,7 @@ app.use(cookieParser());
 // Routers part 
 app.use('/api/auth', authRouter); // Added missing `/`
 app.use('/api/messages',messageRouter)
+app.use('/api/chat',chat)
 
 
 if(process.env.NODE_ENV==='production'){
