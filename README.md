@@ -10,6 +10,12 @@
 - **JSON Web Token (JWT)**: Secures authentication by generating and verifying tokens.
 - **bcrypt**: Encrypts user passwords for secure storage.
 
+### Frontend
+- **React.js**: Builds dynamic user interfaces for the chat application.
+- **TailwindCSS**: Provides utility-first CSS for styling components efficiently.
+- **React-Toastify**: Implements toast notifications for real-time feedback (e.g., message sent, error alerts).
+- **DaisyUI**: Enhances TailwindCSS with pre-styled UI components for faster development.
+
 ### Additional Features
 - **Chatbot Integration**: Provides automated responses or support functionality.
 - **Cloudinary**: Used for storing and managing multimedia files (e.g., images, videos) uploaded during chat sessions.
@@ -36,11 +42,27 @@
    - Hashes passwords before storing them in the database.
    - Enhances security by protecting sensitive user information.
 
-6. **Chatbot Integration**:
+6. **React.js**:
+   - Renders responsive and interactive user interfaces.
+   - Optimizes performance with component-based architecture.
+
+7. **TailwindCSS**:
+   - Offers utility-first styling for rapid UI development.
+   - Ensures consistent and responsive design across devices.
+
+8. **React-Toastify**:
+   - Displays non-intrusive toast notifications for real-time feedback.
+   - Enhances user experience by providing instant alerts.
+
+9. **DaisyUI**:
+   - Provides pre-built components styled with TailwindCSS.
+   - Speeds up the UI development process with consistent designs.
+
+10. **Chatbot Integration**:
    - Implements predefined or AI-powered responses.
    - Enhances user engagement and automates repetitive queries.
 
-7. **Cloudinary**:
+11. **Cloudinary**:
    - Optimizes and delivers images/videos for better performance.
    - Manages secure file uploads from the frontend.
 
@@ -51,4 +73,5 @@
 - Real-time messaging with low latency.
 - Secure authentication with JWT and bcrypt.
 - Efficient multimedia handling through Cloudinary.
-- Extensibility with chatbot features for better user experience.
+- Fast and responsive frontend with React.js and TailwindCSS.
+- Enhanced user experience with toast notifications and pre-styled components.
