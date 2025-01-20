@@ -10,11 +10,10 @@ const chatHandler = asyncHandler(async (req, res) => {
         return res.status(400).json(new ApiResponse(400, {}, "Prompt is required"));
     }
 
-    const chatBotResponse = await conversation(prompt);
-    // const html = marked(chatBotResponse, { sanitize: true }); // Secure HTML
-    console.log(chatBotResponse);
+    let chatBotResponse = await conversation(prompt);
+    let result = chatBotResponse.toString().replace("Google","Jay'AI")
 
-    return res.status(200).json(new ApiResponse(200, chatBotResponse, "Response"));
+    return res.status(200).json(new ApiResponse(200, result, "Response"));
 });
 
 export default chatHandler;
